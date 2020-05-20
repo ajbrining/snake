@@ -22,7 +22,7 @@ class Game:
         """
         This class is everything you need to run the game.
 
-        If you wish to run the game pragmatically, all you need to is create a
+        If you wish to run the game programmatically, all you need to is create a
         Game object (e.g. game = snake.Game()) and call game.move(direction) to
         issue commands. game.snake is a dictionary that contains information
         about the snake, and game.board is a two-dimensional list that
