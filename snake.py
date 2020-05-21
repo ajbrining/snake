@@ -14,7 +14,7 @@ Functions:
 """
 
 import pygame
-import random
+from random import randint
 
 
 class Game:
@@ -61,8 +61,8 @@ class Game:
         self.started = False
         self.eaten = False
         self.score = 0
-        self.snake = {'head': {'x': random.randint(0, self.COLUMNS - 1),
-                               'y': random.randint(0, self.ROWS - 1)},
+        self.snake = {'head': {'x': randint(0, self.COLUMNS - 1),
+                               'y': randint(0, self.ROWS - 1)},
                       'direction': -1,
                       'tail': [],
                       'size': self.STARTING_SIZE}
@@ -96,8 +96,8 @@ class Game:
         """Places food in a random, unoccupied space."""
         food_placed = False
         while not food_placed and not self.win:
-            self.food = {'x': random.randint(0, self.COLUMNS - 1),
-                         'y': random.randint(0, self.ROWS - 1)}
+            self.food = {'x': randint(0, self.COLUMNS - 1),
+                         'y': randint(0, self.ROWS - 1)}
             if self.board[self.food['x']][self.food['y']] == 0:
                 self.board[self.food['x']][self.food['y']] = 3
                 food_placed = True
@@ -317,8 +317,8 @@ class Game:
         self.score = 0
         self.board = [[0 for i in range(self.ROWS)]
                       for i in range(self.COLUMNS)]
-        self.snake = {'head': {'x': random.randint(0, self.COLUMNS - 1),
-                               'y': random.randint(0, self.ROWS - 1)},
+        self.snake = {'head': {'x': randint(0, self.COLUMNS - 1),
+                               'y': randint(0, self.ROWS - 1)},
                       'direction': -1,
                       'tail': [],
                       'size': self.STARTING_SIZE}
