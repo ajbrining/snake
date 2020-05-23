@@ -82,7 +82,7 @@ class Game:
             self.TEXT_COLOR = (20, 82, 204)
             
             pygame.init()
-            pygame.display.set_caption("Snake")
+            pygame.display.set_caption('Snake')
             icon = pygame.image.load('snake_icon.png')
             pygame.display.set_icon(icon)
             # ensure held keys repeat at least once per frame
