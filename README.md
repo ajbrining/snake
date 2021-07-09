@@ -3,6 +3,9 @@ This a rendition of the classic Snake game that can be played normally or contro
 My intent is for this to be used to experiment with AIs, both hard-coded and machine-learned.
 To this end, I've written [simple_bot.py](simple_bot.py), which acts as a rudimentary example of how you can control the game.
 
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/ajbrining/snake.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ajbrining/snake/alerts/)
+[![Language grade: Python](https://img.shields.io/lgtm/grade/python/g/ajbrining/snake.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/ajbrining/snake/context:python)
+
 ## Requirements
 The only things you need to run this are [Python3](https://www.python.org/downloads/) and [PyGame](https://www.pygame.org/news).
 
