@@ -1,2 +1,3 @@
+# ensure snake.py gets analized
 path_classifiers:
     - exclude: snake.py
